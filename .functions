@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+function gitc() {
+    git add -A
+    git commit -m "$1"
+}
+
+function gitp() {
+    gitc "$1"
+    git push
+}
